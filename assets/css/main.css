@@ -16,6 +16,7 @@ body{
     padding: 7.2rem 10.4rem;
     display: grid;
     justify-content: center;
+    font-size: 16px;
 }
 
 header h1{
@@ -56,3 +57,65 @@ main{
     color: #C4C4CC;
     font-weight: 600;
 }
+/* Estilos para telas menores ou iguais a 425px */
+@media screen and (min-width: 375px) and (max-width: 425px){
+    /* Seus estilos aqui */
+    body{
+        padding: 3rem;
+    }
+    header{
+        text-align: center;
+    }
+    header h1{
+        font-size: 3.3rem;
+        line-height: 32px;
+        color: brown;
+        
+    }
+    header p{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+   main{
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+   }
+   .card h2{
+    font-size: 2.5rem;
+   }
+   
+   
+  }
+  
+  /* Estilos para telas entre 426px e 768px */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Seus estilos aqui */
+    header{
+        text-align: center;
+    }
+    header h1{
+        font-size: 4rem;
+        line-height: 30px;
+    }
+    header p{
+        font-size: 2rem;
+    }
+    main{
+        grid-template-columns:1fr;
+    }
+    .card img{
+        width: 100%;
+        max-width: 100%;
+
+    }
+    .card h2{
+        font-size: 3rem;
+    }
+    
+  }
+  
+  /* Estilos para telas maiores que 768px */
+  @media screen and (min-width: 1025px) {
+    /* Seus estilos aqui */
+    
+  }
